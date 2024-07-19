@@ -7,8 +7,8 @@
     <title>BotonEnviar</title>
 </head>
 <body>
-    <form action="{{route('alerta-enviada')}}" method="HEAD">
+    <form action="{{route('alerta-enviada')}}" method="GET">
         @csrf
-        <button type="submit">Sale lolsito?</button>
+        <button type="submit">Enviar Alerta</button>
     </form>
 </html>

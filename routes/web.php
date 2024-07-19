@@ -9,6 +9,9 @@ Route::get('/', function () {
 });
 
 Route::get('alerta-enviada', function () {
-    Mail::to('alertadcsar@gmail.com')->send(new EnviarAlerta);
+    Mail::to('rlaramora3@gmail.com')
+    // ->cc('rlaramora3@gmail.com')  para enviar una copia a otro correo // 
+    ->send (new EnviarAlerta);
     return "La alerta se envio al correo exitotasamente";
-})->name('alerta-enviada');
+})
+    ->name('alerta-enviada');

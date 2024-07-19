@@ -27,7 +27,7 @@ class EnviarAlerta extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'enviar Alerta',
+            subject: 'enviar-alerta',
         );
     }
 
